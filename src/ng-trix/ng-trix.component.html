@@ -1,2 +1,17 @@
-hey
-<trix-editor></trix-editor>
+<input id="value" value="regular value attribute">
+<trix-editor input="id"></trix-editor>
+
+<input id="value" [value]="'[value]=string input'">
+<trix-editor input="id"></trix-editor>
+<hr>
+<input id="ngModel" [(ngModel)]="ngModel">
+<trix-editor input="ngModel"></trix-editor>
+<pre> {{ngModel}}</pre>
+<hr>
+<form [formGroup]="formGroup">
+    <input id="formControl" formControlName="formControl">
+    <trix-editor input="formControl"></trix-editor>
+    <pre>{{formGroup.value | json}}</pre>
+</form>
+
+<hr>
