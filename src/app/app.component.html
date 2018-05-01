@@ -1,17 +1,17 @@
-<input id="valueX" type="hidden" value="regular value attribute" name="content">
+<input id="valueX" [ngTrix]="trixValue" [debug]="true" type="hidden" value="regular value attribute" name="content">
 
-<trix-editor input="valueX"></trix-editor>
+<trix-editor input="valueX" #trixValue></trix-editor>
 
 
-<input id="ngValue" [value]="'[value]=string input'">
-<trix-editor input="ngValue"></trix-editor>
+<input id="ngValue" [ngTrix]="trixNgValue" [value]="'[value]=string input'">
+<trix-editor input="ngValue" #trixNgValue></trix-editor>
 <hr>
 <input id="ngModel" [(ngModel)]="ngModel">
 <trix-editor input="ngModel"></trix-editor>
 <pre> {{ngModel}}</pre>
 <hr>
 <form [formGroup]="formGroup"> 
-    <input id="formControl" [ngTrix]="trixControl" formControlName="formControl">
+    <input id="formControl" [ngTrix]="trixControl"  formControlName="formControl">
     <trix-editor input="formControl" #trixControl></trix-editor>
 </form>
 
