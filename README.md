@@ -1,6 +1,7 @@
 # ng-trix
 Angular2+ wrapper for basecamp trix
 
+# Work in progress - do not use.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
